@@ -1,4 +1,4 @@
-package com.zacharyahutton.ds;
+﻿package com.zacharyahutton.ds;
 
 import org.junit.jupiter.api.Test;
 
@@ -14,5 +14,6 @@ class BinarySearchTreeTest {
         assertTrue(bst.contains(5));
         assertFalse(bst.contains(99));
         assertEquals(3, bst.size());
+        assertEquals(java.util.List.of(5, 10, 15), bst.inOrder());
     }
 }

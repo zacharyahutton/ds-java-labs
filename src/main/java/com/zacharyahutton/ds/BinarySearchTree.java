@@ -1,4 +1,7 @@
-package com.zacharyahutton.ds;
+﻿package com.zacharyahutton.ds;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BinarySearchTree {
     static class Node {
@@ -41,5 +44,18 @@ public class BinarySearchTree {
     private int size(Node node) {
         if (node == null) return 0;
         return 1 + size(node.left) + size(node.right);
+    }
+
+    public List<Integer> inOrder() {
+        List<Integer> out = new ArrayList<>();
+        inOrder(root, out);
+        return out;
+    }
+
+    private void inOrder(Node node, List<Integer> out) {
+        if (node == null) return;
+        inOrder(node.left, out);
+        out.add(node.value);
+        inOrder(node.right, out);
     }
 }
