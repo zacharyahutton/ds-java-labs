@@ -15,7 +15,7 @@ Each class implements a small, readable ADT from scratch (no `java.util` map/lis
 ## Prerequisites
 
 - JDK 17 or newer
-- Apache Maven 3.9+
+- JDK only (Maven Wrapper `mvnw` included)
 
 ## Setup
 
@@ -27,7 +27,7 @@ cd ds-java-labs
 ## How to run tests
 
 ```bash
-mvn test
+mvnw test  # Windows: mvnw.cmd test
 ```
 
 Expected: all tests in `src/test/java` pass (BST, linked list, hash map).
@@ -54,6 +54,15 @@ pom.xml                                Maven config
 ## Portfolio disclaimer
 
 Linked from my [portfolio](https://github.com/zacharyahutton/portfolio). These are **learning samples**, not production libraries and not copies of graded exam submissions.
+
+## VS Code
+
+1. **File → Open Folder** and select this repository root.
+2. Install recommended extensions when prompted (Python or Node/Java packs).
+3. **Run and Debug** (`F5`): choose **JUnit All depending on the repo.
+4. **Terminal → Run Task**: `mvn: test`.
+
+Workspace settings live in `.vscode/` (`extensions.json`, `launch.json`, `tasks.json`, `settings.json`).
 
 ## Future improvements
 
