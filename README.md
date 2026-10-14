@@ -1,6 +1,10 @@
-﻿# DS Java Labs
+# DS Java Labs
 
-DS Java Labs is a **portfolio demonstration** collection of classic data structure implementations in Java, with JUnit 5 tests and short complexity notes. It supports UTech-style coursework learning goals without shipping proprietary exam materials.
+DS Java Labs is a collection of classic data structure implementations in Java, with JUnit 5 tests and short complexity notes. 
+
+## Why I built it
+
+I wrote these while studying data structures, to make sure I understood how each one works underneath rather than only how to call `java.util`.
 
 ## What it does
 
@@ -51,9 +55,9 @@ docs/ComplexityNotes.md                Big-O reference
 pom.xml                                Maven config
 ```
 
-## Portfolio disclaimer
+## Limitations
 
-Linked from my [portfolio](https://github.com/zacharyahutton/portfolio). These are **learning samples**, not production libraries and not copies of graded exam submissions.
+These are study implementations, not replacements for the standard library.
 
 ## VS Code
 
@@ -73,3 +77,9 @@ Workspace settings live in `.vscode/` (`extensions.json`, `launch.json`, `tasks.
 ## License
 
 MIT
+
+## Roadmap
+
+- AVL tree with rotations
+- Graph with BFS and DFS
+- Min heap and priority queue
